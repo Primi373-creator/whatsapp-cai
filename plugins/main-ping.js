@@ -1,10 +1,15 @@
-const { calculatePing, pnix, mode} = require("../lib");
+const { calculatePing, alpha, mode } = require("../lib");
 
-pnix({
+alpha(
+  {
     pattern: "ping",
     type: "main",
     desc: "Bot response.",
-    fromMe: mode
-}, async(msg, match) => {
-        await msg.reply(`*📡Pong!* ${calculatePing(msg.messageTimestamp, Date.now())} Ms`);
-})
+    fromMe: mode,
+  },
+  async (msg, match) => {
+    await msg.reply(
+      `*📡Pong!* ${calculatePing(msg.messageTimestamp, Date.now())} Ms`,
+    );
+  },
+);
