@@ -1,7 +1,7 @@
 const toBool = (x) => x === "true";
 
 module.exports = {
-  SESSION_ID: process.env.SESSION_ID || "inrl~mF9RCwRF",
+  SESSION_ID: process.env.SESSION_ID || "",
   BASE_URL: "https://api.alpha-md.rf.gd/",
   ALPHA_KEY: process.env.ALPHA_KEY || "alpha-free",
   HANDLERS: process.env.HANDLERS || ".", //[.]
